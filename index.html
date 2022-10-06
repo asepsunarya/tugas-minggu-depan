@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .nav-item {
+      padding-right: 50px;
+      color: white !important
+    }
+
+    .carousel-item img,
+    #position {
+      height: 100vh;
+    }
+
+    .navbar {
+      z-index: 99;
+      width: 100vw;
+    }
+
+    .row {
+      margin: 20px;
+    }
+
+    .h-500 {
+      height: 500px
+    }
+
+    .h-50 {
+      height: 50px
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar-custom" class="fixed-top navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#location">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.gotravelly.com/blog/wp-content/uploads/2019/10/Gunung-Fuji-Jepang-1024x640.jpg"
+            class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://dagodreampark.co.id/images/Gambar-Pemandangan-Gunung-dan-Bunga-Sakura.jpg"
+            class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.okeinfo.net/content/2017/01/16/406/1592517/spot-terbaik-menikmati-pemandangan-indah-di-gunung-fuji-Pglih8v4xX.jpg"
+            class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container mt-4">
+      <h1 class="text-center">About</h1>
+      <div class="row" data-aos="zoom-in">
+        <div class="col-md-6">
+          <h3>Subtitle</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam est reiciendis deleniti quae nisi maxime
+            eveniet accusantium iste recusandae nostrum inventore iure, dolorem, dolore temporibus atque natus officiis
+            mollitia ea!</p>
+        </div>
+        <div class="col-md-6">
+          <img width="100%"
+            src="https://s3-ap-northeast-1.amazonaws.com/thegate/2019/06/13/12/21/23/Arakurayama-Sengen-Shrine-Cherry-Blossoms.jpg">
+        </div>
+      </div>
+      <div class="row" data-aos="zoom-in">
+        <div class="col-md-6">
+          <img width="100%"
+            src="https://s3-ap-northeast-1.amazonaws.com/thegate/2019/06/13/12/21/23/Arakurayama-Sengen-Shrine-Cherry-Blossoms.jpg">
+        </div>
+        <div class="col-md-6">
+          <h3>Subtitle</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam est reiciendis deleniti quae nisi maxime
+            eveniet accusantium iste recusandae nostrum inventore iure, dolorem, dolore temporibus atque natus officiis
+            mollitia ea!</p>
+        </div>
+      </div>
+      <div class="row" data-aos="zoom-in">
+        <div class="col-md-6">
+          <h3>Subtitle</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam est reiciendis deleniti quae nisi maxime
+            eveniet accusantium iste recusandae nostrum inventore iure, dolorem, dolore temporibus atque natus officiis
+            mollitia ea!</p>
+        </div>
+        <div class="col-md-6">
+          <img width="100%"
+            src="https://s3-ap-northeast-1.amazonaws.com/thegate/2019/06/13/12/21/23/Arakurayama-Sengen-Shrine-Cherry-Blossoms.jpg">
+        </div>
+      </div>
+      <div class="row" data-aos="zoom-in">
+        <div class="col-md-6">
+          <img width="100%"
+            src="https://s3-ap-northeast-1.amazonaws.com/thegate/2019/06/13/12/21/23/Arakurayama-Sengen-Shrine-Cherry-Blossoms.jpg">
+        </div>
+        <div class="col-md-6">
+          <h3>Subtitle</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam est reiciendis deleniti quae nisi maxime
+            eveniet accusantium iste recusandae nostrum inventore iure, dolorem, dolore temporibus atque natus officiis
+            mollitia ea!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location" class="mt-4">
+    <h1 class="text-center">Location</h1>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15846.615481752293!2d107.13663675!3d-6.811888249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1665057252760!5m2!1sid!2sid"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section id="contact" class="bg-primary h-500">
+    <div class="row">
+      <div class="col-md-6 m-5 text-white">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea fugiat velit nostrum similique exercitationem
+        asperiores harum ut ipsa sint sed illo recusandae eos eveniet, praesentium laudantium, corporis quas! Rerum,
+        nulla.
+        Illo quae sunt praesentium voluptatibus impedit assumenda tempora, velit a quidem soluta facere reprehenderit
+        voluptatem corrupti totam cupiditate id sint beatae harum dicta obcaecati delectus minus nam aut laborum! Ad?
+        Culpa praesentium consequatur totam natus dicta reprehenderit repudiandae molestiae eveniet quod perferendis.
+        Dolore quo ducimus amet aliquam molestias et quia odit quibusdam! Rem laudantium laborum asperiores,
+        necessitatibus vel nam recusandae.
+        Reiciendis sint voluptatem architecto sapiente quo soluta reprehenderit facilis eum nobis tenetur dolor impedit
+        perferendis ducimus doloremque, molestias magni exercitationem porro modi nostrum, pariatur ad. Magnam
+        voluptatum fuga laborum mollitia!
+        Dolorum consequuntur distinctio, cum voluptate earum ratione dolores nisi? Suscipit, minima assumenda quam earum
+        optio omnis minus totam ipsam nisi esse fugiat harum corrupti eveniet vitae, sit magnam aspernatur aperiam.
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid h-50 text-center p-2">
+    Copyright &copy; IF NR 2020 | 2022
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    let navbar = document.getElementById('navbar-custom')
+
+    window.addEventListener('scroll', function () {
+      let scroll = window.scrollY
+      if (scroll > 50) {
+        navbar.classList.add('bg-light')
+        navbar.classList.remove('navbar-dark')
+      } else {
+        navbar.classList.remove('bg-light')
+        navbar.classList.add('navbar-dark')
+      }
+    })
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
